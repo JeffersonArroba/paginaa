@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Cócteles</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-image: url('https://images.ctfassets.net/p1wk6poseifr/75GPhAZUTuXvGuaDmsQLYQ/bd2874e756772c6e7e412819456d79b4/baileys-shakeado-milk-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .coctel {
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 15px;
+            overflow: hidden;
+            backdrop-filter: blur(4px);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efecto de elevación y sombra al pasar */
+        .coctel:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+        }
+
+        /* Imagen con efecto hover */
+        .coctel img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .coctel img:hover,
+        .coctel img:active {
+            transform: scale(1.08);
+            filter: brightness(1.2);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .coctel h3 {
+            margin: 0;
+            padding: 12px 0;
+            background: rgba(0, 0, 0, 0.55);
+            font-size: 1.5em;
+        }
+
+        .btn-pedir {
+            display: block;
+            padding: 14px 0;
+            background-color: #d4af37;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: 0.3s, transform 0.3s ease;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .btn-pedir:hover {
+            background-color: #f1d97a;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Menú de Cócteles</h1>
+    </header>
+
+    <div class="menu-container">
+
+        <div class="coctel">
+            <img src="https://cdn.diffordsguide.com/cocktail/LRZ8gr/default/0/512x.webp" alt="Mojito">
+            <h3>Mojito</h3>
+            <a class="btn-pedir" href="https://wa.link/6jeyf2" target="_blank">PEDIR</a>
+        </div>
+
+        <div class="coctel">
+            <img src="https://cdn0.recetasgratis.net/es/posts/2/2/6/coctel_de_maracuya_y_ron_34622_600_square.jpg" alt="Maracuya">
+            <h3>Maracuya</h3>
+            <a class="btn-pedir" href="https://wa.link/utyo2h" target="_blank">PEDIR</a>
+        </div>
+
+        <div class="coctel">
+            <img src="https://www.crunchtimekitchen.com/wp-content/uploads/2022/10/Jalapeno-Margarita-Long2-683x1024.jpg" alt="Margarita">
+            <h3>Margarita</h3>
+            <a class="btn-pedir" href="https://wa.link/jj2va4" target="_blank">PEDIR</a>
+        </div>
+
+        <div class="coctel">
+            <img src="https://cookinglsl.com/wp-content/uploads/2024/01/baileys-chocolate-martini-44.jpg" alt="Chocolate">
+            <h3>Chocolate</h3>
+            <a class="btn-pedir" href="https://wa.link/f9udqj" target="_blank">PEDIR</a>
+        </div>
+
+        <div class="coctel">
+            <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767" alt="Caipirinha">
+            <h3>Caipirinha</h3>
+            <a class="btn-pedir" href="https://wa.link/co5au5" target="_blank">PEDIR</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+

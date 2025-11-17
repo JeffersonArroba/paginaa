@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaileyMix Haven</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+
+            /* Imagen de fondo */
+            background-image: url('https://images.ctfassets.net/p1wk6poseifr/75GPhAZUTuXvGuaDmsQLYQ/bd2874e756772c6e7e412819456d79b4/baileys-shakeado-milk-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .contenedor {
+            background: rgba(0, 0, 0, 0.55);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 90%;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.3em;
+            margin-bottom: 1em;
+        }
+
+        /* Imagen de cóctel */
+        .imagen-coctel {
+            width: 260px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .boton {
+            padding: 14px 30px;
+            background-color: #d4af37;
+            color: black;
+            font-weight: bold;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #f1d97a;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+            font-size: 1em;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 5px 0;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <img src="https://latabernablog.wordpress.com/wp-content/uploads/2013/12/9b548-orgasmo.png"
+             alt="Coctel"
+             class="imagen-coctel">
+
+        <h1>Bienvenidos a PiviVix Bailey Bar</h1>
+        <p>La mejor en cocteles</p>
+
+        <button class="boton" onclick="window.location.href='menu.html'">
+            Menú
+        </button>
+    </div>
+
+    <footer>
+        Hecho por Pierina Yepez, Viviana Preciado y Victor Zamora
+    </footer>
+
+</body>
+</html>
+
+
